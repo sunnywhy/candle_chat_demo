@@ -1,0 +1,22 @@
+[package]
+name = "candle_chat_demo"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1"
+candle-core = "0.3"
+candle-transformers = "0.3"
+hf-hub = "0.3"
+tokenizers = "0.15"
+clap = "4.4"
+
+[[bin]]
+name = "simple"
+path = "src/simple.rs"
+
+[[bin]]
+name = "cli"
+path = "src/cli.rs"
